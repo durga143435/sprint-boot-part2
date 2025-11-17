@@ -1,6 +1,6 @@
 package com.codewithmosh.store.mappers;
 
-import com.codewithmosh.store.controllers.UpdateUserRequest;
+import com.codewithmosh.store.dtos.UpdateUserRequest;
 import com.codewithmosh.store.dtos.RegisterUserRequest;
 import com.codewithmosh.store.dtos.UserDto;
 import com.codewithmosh.store.entities.User;

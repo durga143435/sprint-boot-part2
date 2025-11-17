@@ -3,10 +3,11 @@ package com.codewithmosh.store.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.action.internal.OrphanRemovalAction;
 
 import java.math.BigDecimal;
 
-
+@ToString
 @Getter
 @Setter
 @Entity
@@ -21,6 +22,7 @@ public class CartItem {
     @Column(name = "id")
     private Long id;
 
+    @ToString.Exclude
     @ManyToOne
     @JoinColumn(name = "cart_id")
     private Cart cart;

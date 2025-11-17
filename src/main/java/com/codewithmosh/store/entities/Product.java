@@ -37,4 +37,7 @@ public class Product {
     @ToString.Exclude
     @OneToMany(mappedBy = "product")
     private Set<CartItem> cartItems = new HashSet();
+
+/*    @OneToMany(mappedBy = "product")
+    private OrderItem orderItem;*/
 }

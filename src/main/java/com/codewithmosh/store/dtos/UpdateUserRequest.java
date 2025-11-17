@@ -1,4 +1,4 @@
-package com.codewithmosh.store.controllers;
+package com.codewithmosh.store.dtos;
 
 import lombok.Data;
 

@@ -6,4 +6,15 @@ spring:
     username: root
     password: Durga@03
   jpa:
-    show-sql: true  
+    show-sql: true
+  jwt:
+    secret: ${JWT_SECRET}
+    accessTokenExpiration: 9000
+    refreshTokenExpiration: 604800
+stripe:
+  secretKey: ${STRIPE_SECRET}
+  webhookSecretKey: ${STRIPE_WEBHOOK_SECRET}
+webUrl: http://localhost:4242
+
+
+
