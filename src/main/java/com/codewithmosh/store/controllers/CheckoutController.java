@@ -4,13 +4,10 @@ import com.codewithmosh.store.dtos.CheckoutRequest;
 import com.codewithmosh.store.dtos.CheckoutResponse;
 import com.codewithmosh.store.dtos.ErrorDto;
 import com.codewithmosh.store.services.WebhookRequest;
-import com.codewithmosh.store.entities.Order;
 import com.codewithmosh.store.exceptions.CartEmptyException;
 import com.codewithmosh.store.exceptions.CartNotFoundException;
 import com.codewithmosh.store.exceptions.PaymentException;
-import com.codewithmosh.store.repositories.OrderRepository;
 import com.codewithmosh.store.services.CheckoutService;
-import com.codewithmosh.store.services.PaymentGateway;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -25,8 +22,6 @@ import java.util.Map;
 public class CheckoutController {
 
     private final CheckoutService checkoutService;
-    private final OrderRepository orderRepository;
-    private final PaymentGateway paymentGateway;
 
 
     @PostMapping
