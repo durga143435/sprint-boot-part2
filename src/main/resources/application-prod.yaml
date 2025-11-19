@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: ${SPRING_DATASOURCE_URL}
-webUrl: https://mystore.com
+webUrl: http://mystore.com
 
 
 
